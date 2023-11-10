@@ -39,6 +39,8 @@ svm_classifier.fit(X_train, y_train)
 y_pred_svm = svm_classifier.predict(X_test)
 accuracy_svm = accuracy_score(y_test, y_pred_svm)
 
+st.title("Artificial Intelligence Task 2")
+
 # Streamlit interface for displaying results
 st.write("Logistic Regression Accuracy:", f"{accuracy_lr:.2f}")
 st.write("XGBoost Accuracy:", f"{accuracy_xgb:.2f}")
